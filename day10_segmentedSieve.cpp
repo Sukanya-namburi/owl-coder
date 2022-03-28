@@ -38,7 +38,7 @@ int main(){
         if(firstmul<L){
             firstmul+=it;
         }
-        for(int j=firstmul;j<=R;j+=it){
+        for(int j=max(firstmul,it*it);j<=R;j+=it){
             dummy[j-L]=0;
         }
     }
